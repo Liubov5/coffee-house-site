@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee-house</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;display=swap" rel="stylesheet">
+    <link rel="icon" href="images/coffee-cup.png">
+</head>
+<body>
+    <main>
+        <header>
+            <div>
+                <img src="images/logo.png" alt="">
+            </div>
+            <nav>
+                <ul>
+                    <li><a class="link"  href="#favoritesCoffee" onclick="closeBurger()" style="margin-left: -5px;">Favorite coffee</a></li>
+                    <li><a class="link" href="#about" onclick="closeBurger()" >About</a></li>
+                    <li><a class="link" href="#mobileApp" onclick="closeBurger()" >Mobile app</a></li>
+                    <li><a class="link" href="#contact" onclick="closeBurger()" >Contact us</a></li>
+                </ul>
+                <div class="coffee-menu">
+                    <a class="link" href="#">
+                        <span>Menu</span> 
+                        <img src="images/coffee-cup.png">
+                    </a>      
+                </div>
+            </nav>
+           
+            <div class="burger-menu">
+                <img class="burger-menu-icon" src="images/button-icon-burger.png" alt="">
+            </div>
+        </header>
+        <div class="enjoy">
+            <video  src="images/video.mp4" autoplay="" muted="" loop=""></video>
+            <div class="enjoy_block">
+               
+                <h1 class="heading-1"><span>Enjoy </span> premium coffee at our charming cafe</h1>
+                <p class="text" style="margin-top: 40px;">With its inviting atmosphere and delicious coffee options, the Coffee House Resource is a popular destination for coffee lovers and those seeking a warm and inviting space to enjoy their favorite beverage.</p>
+                <button class="button menu-btn">
+                    <span>
+                        Menu
+                    </span>
+                </button>
+                
+            </div>
+           
+        </div>
+        <div class="favoritesCoffee" id="favoritesCoffee">
+            <h2 class="heading-2">Choose your <span>favorite</span> coffee</h2>
+            <div class="slider-block">
+                <div class="slider-left-arrow">
+                    <img src="images/button-icon-dark-left.png" style="margin-top: 35px;">
+                </div>
+                <div class="slider">
+                    <div class="slider-container">
+                        
+                        <div class="slider-content">
+                            <img src="images/coffee-slider-1.png" alt="" style="margin-top: 40px;">    
+                            <div>
+                                <h3 class="heading-3" style="margin-top: 16px;">S'mores Frapuccino</h3>
+                                <p class="text" style="margin-top: 16px;">This new drink takes an espresso and mixes it with brown sugar and cinnamon before being topped with oat milk.</p>
+                                <h3 class="heading-3" style="margin-top: 16px;">$ 5.50</h3>
+                            </div>
+                        </div>
+                       
+                    </div>
+                   <div style="display: flex; justify-content: space-between; width: 144px; margin-left: auto; margin-right: auto; margin-top: 40px;">
+                        <div style="width: 40px; height: 4px; background-color: #665F55;"></div>
+                        <div style="width: 40px; height: 4px; background-color: #665F55;"></div>
+                        <div style="width: 40px; height: 4px; background-color: #665F55;"></div>
+                   </div>
+                </div>
+                <div class="slider-right-arrow">
+                     <img src="images/button-icon-dark-right.png" style="margin-top: 35px;">
+                </div>
+            </div>  
+        </div>
+        <div class="about" id="about">
+            <h2 class="heading-2" style="margin-bottom: 36px;">Resource is <span>the perfect and cozy place</span> where you can enjoy a variety of hot beverages, relax, catch up with friends, or get some work done.</h2>
+            <div style="display: flex; gap:40px; flex-wrap:wrap;">
+                <div style="display: flex; flex-wrap: wrap;  flex-direction: column; gap: 40px;">
+                    <div class="about-img-big" style="background-image: url(images/about-1.jpg);"></div>
+                    <div class="about-img-small" style="background-image: url(images/about-2.jpg);"></div>
+                </div>
+                <div style="display: flex; flex-wrap: wrap;  flex-direction: column; gap: 40px;">
+                    <div class="about-img-small" style="background-image: url(images/about-3.jpg);"></div>
+                    <div class="about-img-big" style="background-image: url(images/about-4.jpg);"></div>
+                </div>  
+            </div>
+        </div>
+        <div class="mobileApp" id="mobileApp">
+            <div class="mobileApp-description">
+                <h2 class="heading-2"> <span>Download</span> our apps to start ordering</h2>
+                <p class="text" style="margin-top: 40px; margin-bottom: 40px;">Download the Resource app today and experience the comfort of ordering your favorite coffee from wherever you are</p>
+                <div class="mobileApp-buttons-block">
+                    <button class="button mobileApp-btn" >
+                        <div>
+                            <img src="images/apple-icon.png" alt="">
+                        </div>
+                        <div>
+                            <p style="font-size: 10px;">Avaialable on the</p>
+                            
+                            <p style="font-size: 16px;">App Store</p>
+                        </div>       
+                    </button>
+                    <button class="button  mobileApp-btn">
+                        <div>
+                            <img src="images/google-icon.png" alt="">
+                        </div>
+                        <div>
+                            <p style="font-size: 10px;">Avaialable on</p>
+                            
+                            <p style="font-size: 16px;">Google Store</p>
+                        </div>       
+                    </button>
+                </div>
+            </div>
+            <div class="mobileApp-picture">
+                <img src="images/mobile-screens.png" alt="">
+            </div>
+        </div>
+        <footer id="contact">
+            <div class="footer-left-side">
+                <h2 class="heading-2">Sip, Savor, Smile. <br><span>It’s coffee time! </span></h2>
+                <div class="contact-icons-block">
+                    <img src="images/twitter-icon.png" alt="">
+                    <img src="images/insta-icon.png" alt="">
+                    <img src="images/facebook-icon.png" alt="">
+                </div>
+                
+            </div>
+            <div class="contact-info">
+                <h3 class="heading-3">Contact us</h3>
+                <p style="margin-top: 40px;" class="text">
+                    <img src="images/pin-alt.png" alt="">
+                    <span>8558 Green Rd.,  LA</span>
+                </p>
+                <p style="margin-top: 16px;" class="text">
+                    <img src="images/phone-alt.png" alt="">
+                    <span>+1 (603) 555-0123</span>
+                </p>
+                <p style="margin-top: 16px;" class="text">
+                    <img src="images/clock-alt.png" alt="">
+                    <span> Mon-Sat: 9:00 AM – 23:00 PM</span>
+                </p>
+            </div>
+        </footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

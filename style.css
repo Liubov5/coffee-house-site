@@ -1,0 +1,409 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body, html{
+    background-color: #E1D4C9;
+    height: 100%;
+    font-family: Inter, 'sans-serif';
+    scroll-behavior: smooth;
+}
+main{
+    width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 40px;
+    box-sizing: border-box;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+header{
+    display: flex;
+    font-weight: 600;
+    font-size: 16px;
+    max-width: 1440px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+nav{
+    width: 1250px;
+    display: flex;
+}
+nav ul{
+    width: 1188px;
+}
+
+.burger-menu{
+    display: none;
+}
+.coffee-menu a{
+    color: #403F3D;
+    text-decoration: none;
+    display: flex;
+    align-items:flex-start;
+    column-gap:8px;
+    margin-left: 0;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.link{
+    text-decoration: none;
+    line-height: 150%;
+    margin-left: 40px;
+    color: #403F3D;
+    position: relative;
+   
+}
+
+a::after{
+    transition: 0.5s;
+    transform: scale(0);
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    bottom: -5px;
+    background-color:#403F3D;
+} 
+a:hover::after{
+    transform: scale(1);
+}
+.enjoy{
+   background-image: url(images/img-hero.jpg);
+   border-radius: 40px;
+   height: 644px;
+   background-position: center center;
+   box-sizing: border-box;
+   width: 100%;
+   position: relative;
+   overflow: hidden;
+}
+.enjoy_block{
+    padding: 100px;
+    width: 530px;
+    height: 444px;
+    color: #E1D4C9;
+    position: relative;
+  
+}
+video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+   
+}
+.text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+}
+.heading-1{
+    font-size: 72px;
+    font-weight: 600;
+    line-height: 105%;
+}
+.heading-1 span, .heading-2 span{
+    color: #B0907A;
+    font-style:italic;
+    font-family: Inter;
+}
+.heading-2{
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 125%;
+    color: #403F3D;
+}
+.heading-3{
+    font-size: 24px;
+    font-weight: 600;
+    line-height:  125%;
+}
+.button{
+    width: 200px;
+    height: 64px;
+    border-radius: 100px;
+    border:none;
+    font-family: Inter;
+    font-weight: 600;
+    font-size: 16px;
+}
+.menu-btn{
+    background: #E1D4C9;
+    margin-top: 40px;
+    position: relative;
+    transition: background-image 2s;
+}
+.menu-btn::after{
+    position: absolute;
+    content: "";
+    background: no-repeat 117px/auto url(images/coffee-cup.png);
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.menu-btn:hover::after{
+    opacity: 1;
+}
+.menu-btn span{
+    display: inline-block;
+    transition: all 0.2s;
+}
+.menu-btn:hover span {
+    transform: translateX(-13px);
+}
+.about{
+    margin-top: 100px;
+}
+.about-img-big{
+    height: 590px;
+    width: 660px;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 20px;
+    gap:40px;
+}
+.about-img-small{
+    height: 430px;
+    width: 660px;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 20px;
+    gap: 40px;
+}
+.favoritesCoffee{
+    text-align: center;
+    margin-top: 100px;
+}
+.slider-block{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.slider{
+    width: 1152px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.slider-container{
+    width: 100%;
+    overflow: hidden;
+}
+.slider-inner{
+    width: 3000px;
+    display: flex;
+    justify-content: space-between;
+}
+.slider-content{
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.slider-content img{
+    width: 100%;
+}
+.mobileApp{
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.mobileApp-description{
+    width: 630px;
+    margin-top: 147px;
+    margin-right: 100px;
+}
+.mobileApp-buttons-block{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 430px;
+}
+.mobileApp-btn{
+    display: flex; 
+    border: 1px solid black; 
+    background: none; 
+    padding-left: 20px; 
+    align-items: center;
+}
+footer{
+    border-radius: 40px;
+    background-color: #665F55;
+    padding: 100px;
+    margin-top: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 62px;
+}
+.footer-left-side{
+    width: 570px;
+}
+.contact-info{
+    color: #E1D4C9;
+    margin-top: 33px;
+}
+.contact-icons-block {
+    margin-top: 40px; 
+    display: flex; 
+    row-gap:12px; 
+    column-gap: 12px;
+}
+@media screen and (max-width: 768px) {
+    main{
+        width: 768px;
+    }
+    header{
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        height: 100%;
+    }
+    nav{
+        position: fixed;
+        width: 100%;
+        right: -100%;
+        transition: all 0.3s;
+        bottom: 0;
+        z-index: 1;
+        background-color: #E1D4C9;
+        flex-wrap: wrap;
+        padding-top: 77px;
+        justify-content: center;
+    }
+    .link{
+        margin: 0;
+        font-size: 32px;
+        line-height: 125%;
+    }
+    .coffee-menu{
+        margin-top: -84px;
+    }
+    .coffee-menu a{
+        display: inline;
+    }
+    ul {
+        flex-direction: column;
+        row-gap: 60px;
+        width: 100%;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .burger-menu{
+        display: block;
+    }
+    .about-img-small{
+        display: none;
+    }
+    .enjoy_block{
+        padding-left: 60px;
+        
+    }
+    .about-img-big{
+        width: 688px;
+    }
+    .mobileApp{
+        margin-top: 0px;
+    }
+    .mobileApp-description{
+        margin-top: 105px;
+    }
+    .mobileApp-picture{
+        margin-top: 100px;
+        margin-left: 30px;
+    }
+    footer{
+        margin-top: 96px;
+        padding-top: 98px;
+        padding-left: 55px;
+    }
+    .contact-info {
+        margin-top: 3px;
+    }
+}
+@media screen and (max-width: 380px) { 
+    main{
+        width: 380px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .enjoy{
+        height: 552px;
+    }
+    .enjoy_block{
+        padding-top: 60px;
+        padding-bottom: 60px;
+        padding-left: 16px;
+        padding-right: 16px;
+        width: 316px;
+    }
+    .heading-1 {
+        font-size: 42px;
+        font-weight: 600;
+        line-height:  115%;
+    }
+    .heading-2{
+        font-size: 32px;
+        font-weight: 600;
+        line-height: 125%;
+    }
+    .slider-left-arrow{
+        display: none;
+    }
+    .slider-right-arrow{
+        display: none;
+    }
+    .slide{
+        width: 348px;
+        padding: 0;
+    }
+    .slide-content{
+        width: 348px;
+    }
+    .about-img-big{
+        width: 350px;
+    }
+    .mobileApp-description{
+        width: 380px;
+    }
+    .mobileApp-picture img{
+        width: 348px;
+    }
+    .mobileApp-picture{
+        margin-left: 0px;
+        margin-top: 22px;
+    }
+    .mobileApp-buttons-block{
+        width:350px
+    }
+    .mobileApp-btn{
+        margin-bottom: 20px;
+    }
+    footer{
+        padding-top: 60px;
+        padding-left: 20px;
+        padding-right: 0px;
+        padding-bottom: 60px;
+    }
+    .contact-icons-block{
+        margin-top: 40px;
+    }
+    .footer-left-side{
+        width: 100%;
+    }
+    .contact-info {
+        margin-top: 40px;
+    }
+}
